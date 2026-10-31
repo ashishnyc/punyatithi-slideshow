@@ -120,6 +120,9 @@ html,body{height:auto;min-height:100%;overflow:auto}
  .event-layout{padding:5vh 7vw max(70px,14vh)}.event-card{padding:1.5vh 1.4vw}.event-layout .divider{margin:1vh auto 2vh}.event-layout h2{font-size:5vmin}.family{margin-top:1vh}.calendar-display,.time-range{display:none}
 }
 @media(prefers-reduced-motion:reduce){.slide,.control-shell{transition:none!important}.animated{animation:none!important}}
+
+/* Permit frames to shrink again on rotation; explicit fitted widths must not set grid min-content. */
+.photo-layout{grid-template-columns:minmax(0,1fr)}.photo-figure{min-width:0;width:100%}
 </style>
 </head>
 <body>
